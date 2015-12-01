@@ -1,0 +1,12 @@
+one:
+  email: ruby@ruby.com
+  id: 1
+two:
+  email: java@java.com
+  id: 2
+three:
+  email: c@c.com
+  id: 3
+four:
+  email: javascript@javascript.com
+  id: 4

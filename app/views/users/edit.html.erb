@@ -1,0 +1,6 @@
+<h1> User Edit </h1>
+<h5>Your's groups [<b><%= current_user.groups.map {|c| c.name}.join(', ') %></b>]</h5>
+<div class="well">
+  <%= render 'form' %>
+  <%= link_to 'Back', users_path %>
+</div>

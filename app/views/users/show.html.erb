@@ -1,0 +1,10 @@
+<h1>User Name:    <%= @user.email %></h1>
+<div class="well">
+  <h5>Group name: <b><%= @user.groups.map {|c| c.name}.join(', ') %></b> </h5>
+  <p id="notice"><%= notice %></p>
+<% if user_signed_in? %>
+    <p align="center"> <%= button_to "Edit", edit_user_path(@user),
+    :class => "btn btn-default", :method => :get %></p>
+<% end %>
+</div>
+<%= link_to 'Back', users_path %>
